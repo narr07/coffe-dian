@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge',
     'nuxt-headlessui',
-    '@nuxtjs/fontaine',
+    // '@nuxtjs/fontaine',
   ],
   extends: [
     'nuxt-seo-kit'
