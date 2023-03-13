@@ -17,12 +17,11 @@
         </p>
       </div>
       <div class="w-full md:w-1/2">
-        <NuxtImg
+        <TwicImg
           class="object-cover object-center rounded"
           alt="hero"
           src="/img/coffee1.jpg"
           format="webp"
-          filter="grayscale"
         />
       </div>
     </div>
