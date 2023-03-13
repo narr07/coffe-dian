@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/main.css',
   },
   twicpics: {
-    domain: `https://permazix.twic.pics/`,
+    domain: 'https://permazix.twic.pics/',
     anticipation: 0.5,
     path: '/img/',
     step: 50,
