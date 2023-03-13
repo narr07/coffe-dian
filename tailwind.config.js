@@ -1,18 +1,33 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./components/**/*.{vue,js,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./composables/**/*.{js,ts}",
+    "./plugins/**/*.{js,ts}",
+    "./App.{js,ts,vue}",
+    "./app.{js,ts,vue}",
+    "./Error.{js,ts,vue}",
+    "./error.{js,ts,vue}",
+    "./nuxt.config.{js,ts}",
+  ],
   theme: {
+
+    fontFamily: {
+      "coffe-text": ["coffe-text"],
+      "coffe-heading": ["coffe-heading"],
+    },
     extend: {
       colors: {
-        gelap: "#271c19",
-        terang: "#ffc0ad",
-        primary: "#55423d",
-        secondary: "#fffffe",
-        tertiary: "#fff3ec",
-        senary: "#e78fb3",
-        septenary: "#9656a1",
-        nonary: "#f2f2f2",
-        denary: "#f2f2f2",
+        cGelap: "#271c19",
+        cTerang: "#ffc0ad",
+        cWhite: "#fffffe",
+        cPrimary: "#55423d",
+        cMuda: "#fff3ec",
+        cPink: "#e78fb3",
+        cUngu: "#9656a1",
+        cPutih: "#f2f2f2",
       },
     },
   },

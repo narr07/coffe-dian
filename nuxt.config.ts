@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge',
     'nuxt-headlessui',
+    '@twicpics/components/nuxt3',
     // '@nuxtjs/fontaine',
   ],
   extends: [
@@ -15,6 +16,14 @@ export default defineNuxtConfig({
   // },
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
-  }
-
+  },
+  twicpics: {
+    domain: 'https://permazix.twic.pics',
+    anticipation: 0.5,
+    step: 50
+  },
+  
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
 })
