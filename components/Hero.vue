@@ -27,3 +27,24 @@
     </div>
   </section>
 </template>
+<!-- 
+<TwicImg
+  src="<path>"
+  alt="<String>"
+  anchor="<String>"
+  bot="<String>"
+  eager="<boolean>"
+  focus="<auto|coordinates>"
+  intrinsic="<String>"
+  mode="<contain|cover>"
+  position="<css position>"
+  placeholder="<preview|maincolor|meancolor|none>"
+  preTransform="<String>"
+  ratio="<ratio>"
+  @stateChange="<function>"
+  step="<integer>"
+  transition="<fade|zoom|none>"
+  transitionDelay="<String>"
+  transitionDuration="<String>"
+  transitionTimingFunction="<String>"
+/> -->
