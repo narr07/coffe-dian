@@ -1,5 +1,20 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
+  app: {
+    head: {
+      titleTemplate: '%pageTitle %titleSeparator %siteName'
+    }
+  },
+
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://example.com',
+      siteName: 'Indonesian Coffee',
+      siteDescription: 'Indonesian Coffee is a website to tell about all coffee in Indonesia.',
+      language: 'en', // prefer more explicit language codes like `en-AU` over `en`
+    }
+  },
      modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
