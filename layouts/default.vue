@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <div class="">
+  <div class="py-20">
     <slot />
   </div>
   <Footer />

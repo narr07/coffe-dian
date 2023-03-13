@@ -18,18 +18,7 @@
           mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon
           try-hard chambray.
         </p>
-        <div class="flex justify-center">
-          <button
-            class="inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600"
-          >
-            Button
-          </button>
-          <button
-            class="inline-flex px-6 py-2 ml-4 text-lg text-gray-700 bg-gray-100 border-0 rounded focus:outline-none hover:bg-gray-200"
-          >
-            Button
-          </button>
-        </div>
+        
       </div>
       <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
         <img

@@ -1,15 +1,15 @@
 <template>
   <header class="fixed top-0 z-50 w-full p-4 bg-cPrimary">
-    <div class="container flex justify-between mx-auto">
+    <div class="flex items-center justify-between mx-auto text-white">
       <a
         rel="noopener noreferrer"
-        href="#"
+        href="/"
         aria-label="Back to homepage"
         class="flex items-center p-2 font-bold tracking-widest text-white uppercase"
       >
         Coffe
       </a>
-      <ul class="items-stretch hidden space-x-3 md:flex">
+      <ul class="items-stretch hidden space-x-3 text-white md:flex">
         <li class="flex">
           <NuxtLink
             rel="noopener noreferrer"
@@ -37,27 +37,13 @@
             Blog
           </NuxtLink>
         </li>
-        <li class="flex">
-          <NuxtLink
-            rel="noopener noreferrer"
-            to="/"
-            class="flex items-center px-4"
-          >
-            Home
-          </NuxtLink>
-        </li>
       </ul>
       <div class="flex justify-end md:hidden">
         <div class="">
           <Menu as="div" class="relative inline-block text-left">
             <div>
-              <MenuButton
-                class="inline-flex justify-center w-full px-4 py-2 font-medium text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-              >
-                <ChevronDownIcon
-                  class="w-5 h-5 text-violet-200 hover:text-violet-100"
-                  aria-hidden="true"
-                />
+              <MenuButton class="inline-flex justify-center w-full">
+                <Bars3Icon class="w-5 h-5" aria-hidden="true" />
               </MenuButton>
             </div>
 
@@ -70,17 +56,15 @@
               leave-to-class="transform scale-95 opacity-0"
             >
               <MenuItems
-                class="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                class="absolute right-0 w-56 origin-top-right rounded-md shadow-xl bg-cPrimary mt-7"
               >
-                <div class="px-1 py-1">
+                <div class="p-4 space-y-4">
                   <MenuItem v-slot="{ active, close }">
                     <NuxtLink
                       @mouseup="close"
                       to="/"
                       :class="[
-                        active
-                          ? 'bg-emerald-200 dark:bg-emerald-900 '
-                          : 'text-gray-900 dark:text-gray-100 ',
+                        active ? 'bg-cTerang' : 'text-cWhite ',
                         'group flex w-full items-center rounded-md px-2 py-2 ',
                       ]"
                       ><div class="flex flex-row items-center justify-center">
@@ -93,9 +77,7 @@
                       @mouseup="close"
                       to="/about"
                       :class="[
-                        active
-                          ? 'bg-emerald-200 dark:bg-emerald-900 '
-                          : 'text-gray-900 dark:text-gray-100 ',
+                        active ? 'bg-cTerang' : 'text-cWhite ',
                         'group flex w-full items-center rounded-md px-2 py-2 ',
                       ]"
                       ><div class="flex flex-row items-center justify-center">
@@ -108,9 +90,7 @@
                       @mouseup="close"
                       to="/blog"
                       :class="[
-                        active
-                          ? 'bg-emerald-200 dark:bg-emerald-900 '
-                          : 'text-gray-900 dark:text-gray-100 ',
+                        active ? 'bg-cTerang' : 'text-cWhite ',
                         'group flex w-full items-center rounded-md px-2 py-2 ',
                       ]"
                       ><div class="flex flex-row items-center justify-center">
@@ -118,9 +98,7 @@
                       </div>
                     </NuxtLink>
                   </MenuItem>
-                
                 </div>
-               
               </MenuItems>
             </transition>
           </Menu>
@@ -131,11 +109,11 @@
 </template>
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { ChevronDownIcon } from "@heroicons/vue/20/solid";
+import { Bars3Icon } from "@heroicons/vue/20/solid";
 </script>
 
 <style>
 .router-link-active {
-  @apply font-bold text-cPink;
+  @apply font-bold text-cUngu;
 }
 </style>
