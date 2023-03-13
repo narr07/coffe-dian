@@ -17,11 +17,13 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
   },
-  twicpics: {
-    domain: 'https://permazix.twic.pics',
-    anticipation: 0.5,
-    step: 50
-  },
   
+  image: {
+    twicpics: {
+      baseURL: "https://permazix.twic.pics/"
+      // Feel free to use our demo domain to try the following examples.
+      // baseUrl: 'https://demo.twic.pics/'
+    }
+  }
 
 })

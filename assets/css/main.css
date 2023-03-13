@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  @apply duration-200 ease-in-out bg-cGelap ;
+  border-radius: 8px;
+}
 
 @layer base {
   body {
@@ -14,6 +21,11 @@
   h4,
   h5 {
     @apply font-coffe-heading font-black tracking-wider text-cWhite;
+  }
+
+  html {
+    @apply text-[18px] sm:text-[19px] lg:text-[20px] ;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 @font-face {
