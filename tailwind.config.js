@@ -29,6 +29,15 @@ module.exports = {
         cUngu: "#9656a1",
         cPutih: "#f2f2f2",
       },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.cGelap'),
+
+            
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography'), ],

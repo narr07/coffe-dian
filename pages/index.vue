@@ -2,5 +2,6 @@
 <template>
   <Hero />
   <Feature />
+  <Best />
 </template>
 

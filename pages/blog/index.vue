@@ -13,7 +13,7 @@ useHead({
     <header class="page-heading">
       <div class="wrapper">
         <h1 class="text-5xl font-extrabold">All articles</h1>
-        <p class="font-medium text-lg">
+        <p class="text-lg font-medium">
           Here's a list of all my great articles
         </p>
       </div>
@@ -33,7 +33,7 @@ useHead({
             <li v-for="article in list" :key="article._path" class="article">
               <NuxtLink :to="article._path">
                 <div class="wrapper">
-                  <div class="img-cont w-32">
+                  <div class="w-32 img-cont">
                     <img :src="`/${article.img}`" :alt="article.title"
                     class="rounded-lg max-h-[8rem]" />
                   </div>
