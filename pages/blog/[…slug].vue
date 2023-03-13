@@ -35,7 +35,7 @@ useHead({
 </script>
 
 <template>
-  <div class="max-w-screen-lg py-20 mx-auto">
+  <div class="flex items-center justify-center py-20 mx-auto ">
     <main id="main" class="mt-10 article-main">
       <div v-if="data.article" class="relative w-full mx-auto mb-4 md:mb-0">
         <div class="px-4 lg:px-0">
@@ -53,19 +53,19 @@ useHead({
             </li>
           </ul>
         </div>
-
-        <NuxtImg
-          :src="`/${data.article.img}`"
-          :alt="data.article.title"
-          class="px-4 mx-auto rounded-2xl"
-        />
+        <div>
+          <NuxtImg
+            :src="`/${data.article.img}`"
+            :alt="data.article.title"
+            class="px-4 bg-cover rounded-lg"
+            height="400"
+          />
+        </div>
       </div>
 
       <div class="flex flex-col lg:flex-row">
         <div class="w-full px-4 mt-12 text-lg leading-relaxed">
-          <article
-            class="mx-auto prose article prose-p:text-cGelap prose-headings:text-cUngu"
-          >
+          <article class="mx-auto prose article prose-stone prose-img:mx-auto">
             <ContentRenderer class="" :value="data.article">
               <template #empty>
                 <p>No content found.</p>

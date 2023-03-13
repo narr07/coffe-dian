@@ -9,12 +9,18 @@ useHead({
 });
 </script>
 <template>
-  <main>
+  <main class="px-4 py-20 mx-auto sm:px-16 bg-cPrimary">
     <header class="page-heading">
-      <div class="wrapper">
-        <h1 class="text-5xl font-extrabold">All articles</h1>
-        <p class="text-lg font-medium">
-          Here's a list of all my great articles
+      <div class="text-center wrapper">
+        <h1
+          class="text-2xl font-semibold capitalize lg:text-3xl text-cGelap"
+        >
+          From the blog
+        </h1>
+
+        <p class="max-w-lg mx-auto mt-4 ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+          veritatis sint autem nesciunt, laudantium quia tempore delect
         </p>
       </div>
     </header>
@@ -29,31 +35,36 @@ useHead({
       >
         <!-- Default list slot -->
         <template v-slot="{ list }">
-          <ul class="article-list">
-            <li v-for="article in list" :key="article._path" class="article">
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-2">
+            <div v-for="article in list" :key="article._path" class="article">
+              <NuxtImg
+                class="relative z-10 object-cover w-full rounded-md h-96"
+                :src="`/${article.img}`"
+                :alt="article.title"
+              />
+
               <NuxtLink :to="article._path">
-                <div class="wrapper">
-                  <div class="w-32 img-cont">
-                    <img :src="`/${article.img}`" :alt="article.title"
-                    class="rounded-lg max-h-[8rem]" />
-                  </div>
-                  <header>
-                    <h1 class="text-2xl font-semibold">{{ article.title }}</h1>
-                    <p>{{ article.description }}</p>
-                    <ul class="article-tags">
-                      <li
-                        class="tag !py-0.5"
-                        v-for="(tag, n) in article.tags"
-                        :key="n"
-                      >
-                        {{ tag }}
-                      </li>
-                    </ul>
-                  </header>
+                <div
+                  class="relative z-20 max-w-lg p-6 mx-auto -mt-20 rounded-md shadow bg-cTerang"
+                >
+                  <h1
+                    class="text-2xl text-cGelap md:text-xl"
+                  >
+                    {{ article.title }}
+                  </h1>
+
+                  <p
+                    class="mt-3 text-sm md:text-sm"
+                  >
+                    {{ article.description }}
+                  </p>
+
+                  
+                  
                 </div>
               </NuxtLink>
-            </li>
-          </ul>
+            </div>
+          </div>
         </template>
 
         <!-- slot to display message when no content is found -->
