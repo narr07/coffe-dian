@@ -1,27 +1,36 @@
 <template>
-  <section class="text-cPrimary body-font">
+  <section class="text-cWhite bg-cGelap">
     <div
       class="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row"
     >
       <div
-        class="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0"
+        class="flex flex-col items-center mb-4 text-center lg:flex-grow md:w-1/2 md:items-start md:text-left "
       >
         <h1
-          class="mb-4 text-4xl font-medium uppercase text-cGelap title-font sm:text-5xl"
+          class="mb-4 text-4xl font-medium uppercase text-cTerang title-font sm:text-5xl"
         >
           Welcome to<br class="hidden lg:inline-block" />
           <span class="text-cUngu"> Indonesian Coffe Website </span>
         </h1>
-        <p class="leading-relaxed ">
-          Indonesia is a country rich in natural wealth, one of the abundant natural products in Indonesia is coffee. Indonesian coffee is one of the best in the world. this website will discuss about coffee both in Indonesia and the world
+        <p class="mb-8 leading-relaxed">
+          Indonesia is a country rich in natural wealth, one of the abundant
+          natural products in Indonesia is coffee. Indonesian coffee is one of
+          the best in the world. this website will discuss about coffee both in
+          Indonesia and the world
         </p>
       </div>
       <div class="w-full md:w-1/2">
         <TwicImg
-          class="object-cover object-center rounded"
+          class="object-cover object-center w-full transition duration-300 ease-in-out rounded hover:scale-95 h-[250]"
           alt="hero"
+          title="hero"
           src="/img/coffee1.jpg"
           format="webp"
+          fokus="left"
+          placeholder="preview"
+          ratio="5/4"
+          resize="cover"
+          mode="cover"
         />
       </div>
     </div>

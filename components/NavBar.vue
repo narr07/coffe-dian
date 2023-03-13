@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 z-50 w-full p-4 bg-cPrimary">
+  <header class="fixed top-0 z-50 w-full p-4 bg-cGelap">
     <div class="flex items-center justify-between mx-auto text-white">
       <a
         rel="noopener noreferrer"
@@ -56,7 +56,7 @@
               leave-to-class="transform scale-95 opacity-0"
             >
               <MenuItems
-                class="absolute right-0 w-56 origin-top-right rounded-md shadow-xl bg-cPrimary mt-7"
+                class="absolute right-0 w-56 origin-top-right rounded-md shadow-xl bg-cGelap mt-7"
               >
                 <div class="p-4 space-y-4">
                   <MenuItem v-slot="{ active, close }">
