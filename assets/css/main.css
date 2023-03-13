@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 @layer base {
   body {
     @apply font-coffe-text bg-cTerang selection:text-cTerang selection:bg-cGelap;
@@ -12,8 +13,7 @@
   h3,
   h4,
   h5 {
-    @apply font-coffe-heading font-black tracking-wider text-cWhite ;
-    
+    @apply font-coffe-heading font-black tracking-wider text-cWhite;
   }
 }
 @font-face {
