@@ -24,7 +24,7 @@
           class="object-cover object-center w-full transition duration-300 ease-in-out rounded hover:scale-95 h-[250]"
           alt="hero"
           title="hero"
-          src="/img/coffee1.jpg"
+          src="bijikopi3.jpg"
           format="webp"
           fokus="left"
           placeholder="preview"

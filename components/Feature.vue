@@ -5,19 +5,14 @@
     >
       <div class="w-full lg:w-1/2">
         <div class="flex items-center justify-center p-4 md:p-8 lg:p-12">
-          <TwicImg
+          <NuxtImg
             class="object-cover object-center w-full transition duration-300 ease-in-out rounded hover:scale-95"
             alt="hero"
             title="hero"
-            src="/img/bijikopi.jpg"
+            src="/img/bijikopi4.jpg"
             format="webp"
             height="450"
             width="450"
-			ratio="5/4"
-			fokus="left"
-			placeholder="preview"
-			resize="cover"
-			mode="cover"
           />
         </div>
       </div>
